@@ -1,0 +1,27 @@
+spring: 
+  jpa:
+    database: h2
+    hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      ddl-auto: create-drop
+    generate-ddl: true
+    properties:
+      hibernate.format_sql: true
+    show-sql: true
+    
+    h2:
+    console:
+      enabled: true
+  
+datasource:
+  first:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:first
+    username: sa
+    
+  second: 
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:second
+    username: sa
+
+    
