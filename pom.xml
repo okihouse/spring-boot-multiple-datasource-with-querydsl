@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.rest</groupId>
-	<artifactId>test</artifactId>
+	<artifactId>spring-boot-ds-with-querydsl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>test</name>
-	<description>test</description>
+	<name>spring-boot-multiple-ds-with-querydsl</name>
+	<description>spring-boot-multiple-ds-with-querydsl</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
