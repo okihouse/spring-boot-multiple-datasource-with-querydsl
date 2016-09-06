@@ -1,4 +1,4 @@
-package com.rest.dao.first.custom;
+package com.rest.dao.second.custom;
 
 import java.util.List;
 
@@ -7,29 +7,29 @@ import javax.persistence.PersistenceContext;
 
 import com.mysema.query.jpa.impl.JPAQuery;
 import com.rest.config.QueryDslRepositorySupportWrapper;
-import com.rest.dao.first.First;
-import com.rest.dao.first.QFirst;
+import com.rest.dao.second.QSecond;
+import com.rest.dao.second.Second;
 
-public class FirstRepositoryImpl extends QueryDslRepositorySupportWrapper implements FirstCustomRepository {
+public class SecondRepositoryImpl extends QueryDslRepositorySupportWrapper implements SecondCustomRepository {
 
-	public FirstRepositoryImpl() {
-		super(First.class);
+	public SecondRepositoryImpl() {
+		super(Second.class);
 	}
 	
 	private EntityManager entityManager;
 	
-	@PersistenceContext(unitName = "first")
+	@PersistenceContext(unitName = "second")
 	public void setFirstEntityManager(EntityManager entityManager) {
 		this.entityManager = entityManager;
 		super.setEntityManager(entityManager);
 	}
-
-	private QFirst first = QFirst.first;
+	
+	private QSecond second = QSecond.second;
 	
 	@Override
 	public List<String> messages() {
 		JPAQuery query = new JPAQuery(entityManager);
-		return query.from(first).list(first.message);
+		return query.from(second).list(second.message);
 	}
-	
+
 }

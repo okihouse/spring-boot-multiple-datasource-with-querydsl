@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "first")
+@Table(name = "first_table")
 //@Data no lombok
 public class First {
 

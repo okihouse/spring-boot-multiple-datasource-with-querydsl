@@ -1,9 +1,12 @@
+server:
+  context-path: /api
+
 spring: 
   jpa:
     database: h2
     hibernate:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-      ddl-auto: create-drop
+      ddl-auto: create
     generate-ddl: true
     properties:
       hibernate.format_sql: true
@@ -14,14 +17,15 @@ spring:
       enabled: true
   
 datasource:
+  initialize: true
   first:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:first
+    url: jdbc:h2:mem:first;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sa
     
   second: 
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:second
+    url: jdbc:h2:mem:second;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sa
 
     
