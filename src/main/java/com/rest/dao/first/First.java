@@ -14,16 +14,16 @@ public class First {
 	@Id
 	@GeneratedValue
 	@Column(name = "first_no")
-	private Long firstNo;
+	private Integer firstNo;
 
 	@Column(name = "message")
 	private String message;
 
-	public Long getFirstNo() {
+	public Integer getFirstNo() {
 		return firstNo;
 	}
 
-	public void setFirstNo(Long firstNo) {
+	public void setFirstNo(Integer firstNo) {
 		this.firstNo = firstNo;
 	}
 

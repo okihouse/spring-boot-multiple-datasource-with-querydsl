@@ -13,16 +13,16 @@ public class Second {
 	@Id
 	@GeneratedValue
 	@Column(name = "second_no")
-	private Long secondNo;
+	private Integer secondNo;
 
 	@Column(name = "message")
 	private String message;
 
-	public Long getSecondNo() {
+	public Integer getSecondNo() {
 		return secondNo;
 	}
 
-	public void setSecondNo(Long secondNo) {
+	public void setSecondNo(Integer secondNo) {
 		this.secondNo = secondNo;
 	}
 
