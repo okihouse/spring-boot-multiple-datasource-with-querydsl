@@ -12,7 +12,7 @@ This is sample project spring-boot multiple datasource with querydsl.
 > /api/first  
 
 - **`GET`** **get all messages first db data**
-> /api/first/messages  ()
+> /api/first/messages
 
 - **`PUT`** **save random data to first db**
 > /api/first
@@ -22,5 +22,6 @@ This is sample project spring-boot multiple datasource with querydsl.
 
 - **`GET`** **get all messages second db data**
 > /api/second/messages
+
 - **`PUT`** **save random data to second db**
 > /api/second
