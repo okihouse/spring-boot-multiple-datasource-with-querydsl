@@ -1,13 +1,26 @@
 # Description
-This is sample project for spring-boot-multiple-datasource-with-querydsl
+This is sample project spring-boot multiple datasource with querydsl.
 
+## Run
+```bash
+	mvn test
+```
 
 ## Sample API
 
-- **GET** /api/first  (get all first db data)
-- **GET** /api/first/messages  (get all messages first db data)
-- **PUT** /api/first  (save random data to first db)
+- **`GET`** **get all first db data**
+> /api/first  
 
-- **GET** /api/second  (get all second db data)
-- **GET** /api/second/messages  (get all messages second db data)
-- **PUT** /api/second (save random data to second db)
+- **`GET`** **get all messages first db data**
+> /api/first/messages  ()
+
+- **`PUT`** **save random data to first db**
+> /api/first
+
+- **`GET`** **get all second db data**
+> /api/second
+
+- **`GET`** **get all messages second db data**
+> /api/second/messages
+- **`PUT`** **save random data to second db**
+> /api/second
